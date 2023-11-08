@@ -1,0 +1,274 @@
+#hp {
+    float: left;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    width: 960px;
+    margin: auto;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+
+}
+
+h1 {
+    color: #f0e0f0;
+}
+
+#container {
+    margin: auto;
+}
+
+img[Attributes Style] {
+    width: 480px;
+    aspect-ratio: auto 480 / 300;
+    height: 300px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border-radius: 10px;
+}
+
+#imagen {
+    width: 480px;
+    aspect-ratio: auto 480 / 300;
+    height: 300px;
+}
+
+.arrow {
+    color: aliceblue;
+    text-decoration: none;
+    text-shadow: 6px 6px 5px rgb(187, 123, 243);
+    font-size: 24px;
+}
+
+nav {
+    width: 960px;
+    height: auto;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    border-bottom: 2px dotted #fff;
+}
+
+p {
+    color: aliceblue;
+}
+
+user agent stylesheet nav {
+    display: block;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font: 20px Helvetica;
+    padding: 15px 25px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#logo {
+
+    text-align: left;
+    vertical-align: middle;
+    float: left;
+    width: 10%;
+}
+
+#logo:hover {
+    box-shadow: 0px 8px 16px 0px rgba(208, 160, 240, 0.539);
+}
+
+#container {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+    display: inline-block;
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(255, 249, 249, 0.539);
+    padding: 12px 16px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.sub:hover {
+    background-color: rgb(140, 104, 165);
+}
+
+#overlay {
+    margin: auto;
+}
+
+.main:hover .sub {
+    display: block;
+}
+
+footer {
+    background: linear-gradient(to bottom, #76538d, #53f2da, #ebc48e);
+    color: #080505;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 960px;
+}
+
+/* prices.html */
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 20px;
+}
+
+.table-header {
+    background-color: #653875;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.table-cell {
+    border: 2px dotted black;
+    background-color: #f0e0f0;
+    padding: 10px;
+}
+
+
+button {
+    background-color: #080505;
+
+    border-radius: 5px;
+
+}
+
+button>a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #f0e0f0;
+    color: #080505;
+}
+
+button>a:hover {
+    color: #080505;
+}
+
+label {
+    color: #ffffff;
+}
+
+.homepdiv {
+    background-image: url('../images/image1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 40%;
+    padding-top: 10%;
+}
+
+h2 {
+    color: #9eb7e0;
+    text-shadow: 6px 6px 5px rgb(255, 255, 255);
+
+}
+
+/* products.html */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 120px;
+
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+#formulario {
+    background-color: #653875;
+
+}
+
+#formulario>tr,
+td {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #958e9a;
+}
+
+
+/* staff.html */
+.cardprofile {
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #684471;
+}
+
+.cardprofile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+}
+
+.cardprofile h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.cardprofile p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.divstaff {
+    display: flex;
+    width: 100%;
+}

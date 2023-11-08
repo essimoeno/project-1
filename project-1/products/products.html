@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <link href="../css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../css/about.css" rel="stylesheet" type="text/css">
+    <script>
+        var imagenes= ["img/1.jpg","img/2.jpg","img/3.jpg"];
+        var i=0;
+
+        function alante(){
+            i++;
+            if(i==imagenes.length){
+                i=0;
+            }
+            document.getElementById('imagen').src=imagenes[i];
+        }
+
+        function atras(){
+            i--;
+            if(i==0||i<0){
+                i=imagenes.length;
+            }
+            
+            for(var i=imagenes.length;i=0;i--){
+                
+                document.getElementById('imagen').src=imagenes[i];
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <!--creates a navigation bar with logo to the left, and links centered-->
+
+        <nav>
+            <a href="../homepage.html"><img id="logo" src="../images/logo.png" height="60px" alt="logo"></a>
+            <ul>
+                <li class="main"><a href="../about/aboutus.html">About Us</a>
+                    <ul>
+                        <li class="sub"><a href="../staff/staff.html">Staff</a></li>
+                    </ul>
+                </li>
+                <li class="main"><a href="../products/products.html">Products &amp; Services</a>
+                    <ul>
+                        <li class="sub"><a href="../products/prices.html">Our prices</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1 class='arrow'>Some of our products</h1>
+        <div id="overlay">
+            <div class="card">
+                <img src="img/1.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Web design</h1>
+                <p class="price">$19999.99 </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum nihil dicta itaque delectus perspiciatis quidem, alias animi nostrum similique commodi fugit asperiores minima, laudantium doloremque assumenda ad voluptatum officiis?
+                    
+                </p>
+                <p><button>More details...</button></p>
+              </div>
+              <div class="card">
+                <img src="img/2.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Online training</h1>
+                <p class="price">$19999.99</p>
+                <p>Some text about the products..</p>
+                <p><button>More details...</button></p>
+              </div>
+              <div class="card">
+                <img src="img/3.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>IT Support</h1>
+                <p class="price">$19999.99</p>
+                <p>Some text about the products..</p>
+                <p><button>More details...</button></p>
+              </div>
+
+        </div>
+    </div>
+    <footer>Copyright 2014 <button><a href="../contact/contact.html">Contact</a></button></footer>
+
+
+</body>
+
+</html>

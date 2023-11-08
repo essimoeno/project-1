@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <link href="../css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../css/about.css" rel="stylesheet" type="text/css">
+    <script>
+        var imagenes = ["img/1.jpg", "img/2.jpg", "img/3.jpg"];
+        var i = 0;
+
+        function alante() {
+            i++;
+            if (i == imagenes.length) {
+                i = 0;
+            }
+            document.getElementById('imagen').src = imagenes[i];
+        }
+
+        function atras() {
+            i--;
+            if (i == 0 || i < 0) {
+                i = imagenes.length;
+            }
+
+            for (var i = imagenes.length; i = 0; i--) {
+
+                document.getElementById('imagen').src = imagenes[i];
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <!--creates a navigation bar with logo to the left, and links centered-->
+
+        <nav>
+            <a href="../homepage.html"><img id="logo" src="../images/logo.png" height="60px" alt="logo"></a>
+            <ul>
+                <li class="main"><a href="../about/aboutus.html">About Us</a>
+                    <ul>
+                        <li class="sub"><a href="../staff/staff.html">Staff</a></li>
+                    </ul>
+                </li>
+                <li class="main"><a href="../products/products.html">Products &amp; Services</a>
+                    <ul>
+                        <li class="sub"><a href="../products/prices.html">Our prices</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Contact with us!</h1>
+
+        <div id="overlay">
+            <form action="http://vip.groupehn.com:20003/html/infospost.php" method="post">
+                <table id="formulario">
+                    <tr>
+                        <td><label for="lastname">Lastname</label></td>
+                        <td><input class="yourclass" required id="lastname" type="text" name="lastname"
+                                placeholder="lastname..." /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="firstname">Firstname</label></td>
+                        <td><input class="yourclass" required id="firstname" type="text" name="firstname"
+                                placeholder="firstname..." /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Mail</label></td>
+                        <td><input class="yourclass" required id="mail" type="email" name="email"
+                                placeholder="yourmail@gmail.com" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="request">Request</label></td>
+                        <td><textarea class="yourclass" required name="request" id="request" cols="66"
+                                rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td>
+                            <select class="yourclass" name="country" id="country" required>
+                                <optgroup label="--Country--">
+                                    <option>Spain</option>
+                                    <option>Portugal</option>
+                                    <option>Norway</option>
+                                    <option>Palestine</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    <footer>Copyright 2014 <button><a href="contact.html">Contact</a></button></footer>
+
+
+</body>
+
+</html>
